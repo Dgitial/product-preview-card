@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+
+      .bg {
+        font-family: "Montserrat", sans-serif;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2ebe3;
+        width: 100%;
+        height: 1000px;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        width: auto;
+        margin: 10rem 20rem 20rem 20rem;
+        height: 40rem;
+        border-radius: 0.5rem;
+      }
+      section img {
+        flex: 1;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        width: auto;
+        height: 40rem;
+      }
+      article {
+        display: block;
+        justify-items: flex-start;
+        align-items: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 20rem;
+        height: 35rem;
+      }
+      h4 {
+        font-weight: lighter;
+        letter-spacing: 0.5rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        opacity: 0.5;
+      }
+      h2 {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        font-weight: bolder;
+        font-size: 3rem;
+        font-family: "Fraunces", serif;
+      }
+      h5 {
+        font-weight: lighter;
+        line-height: 2rem;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        opacity: 0.5;
+      }
+      h1 {
+        flex: 1;
+        font-size: 2rem;
+        font-weight: bolder;
+        color: #07a873;
+        font-family: "Fraunces", serif;
+      }
+      h6 {
+        font-weight: lighter;
+        text-decoration: line-through;
+        margin: 2rem 1rem 2rem 2rem;
+        font-size: 1rem;
+      }
+
+      .pricing {
+        display: flex;
+        flex: 1;
+      }
+
+      button {
+        background-color: #07a873;
+        width: 20rem;
+        border: none;
+        height: 3rem;
+        color: #fff;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        font-family: "Montserrat", sans-serif;
+      }
+      button img {
+        padding-right: 0.5rem;
+        font-size: 1rem;
+      }
+      button:hover {
+        background-color: #04442f;
+      }
+      .btn {
+        padding: 2px;
+      }
+      @media screen and (max-width: 1024px) {
+        section img {
+          width: 30rem;
+          height: 20rem;
+          border-top-left-radius: 0.5rem;
+          border-top-right-radius: 0.5rem;
+          border-bottom-left-radius: 0rem;
+          margin-bottom: 1rem;
+        }
+        .card {
+          display: block;
+          justify-items: center;
+          width: auto;
+          height: auto;
+        }
+        article {
+          width: 25rem;
+          height: auto;
+        }
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="card">
+        <section>
+          <img src="./images/image-product-desktop.jpg" alt="perfume" />
+        </section>
+        <article>
+          <h4>perfume</h4>
+
+          <h2>Gabrielle Essence Eau De Parfum</h2>
+
+          <h5>
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </h5>
+          <div class="pricing">
+            <h1>$149.99</h1>
+            <h6>$169.99</h6>
+          </div>
+          <button class="btn">
+            <img src="./images/icon-cart.svg" alt="" />Add to Cart
+          </button>
+        </article>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">DGitial</a>.
+    </div>
+  </body>
+</html>
